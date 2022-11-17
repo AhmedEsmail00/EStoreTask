@@ -1,0 +1,17 @@
+﻿@model List<Product> ;
+@{
+    ViewBag.title = "index";
+}
+<div class="row products">
+
+    @foreach(var item in Model)
+    {
+        <div class='product col-xl-3 col-4'>
+            <h4>@item.Name</h4>
+            <h5> $@item.Price</h5>
+            <button class="btn btn-danger">Add to Cart</button>
+        </div>
+    }
+
+</div>
+

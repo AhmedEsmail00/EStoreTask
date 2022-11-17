@@ -1,0 +1,25 @@
+﻿@model List<Order> ;
+@{
+    ViewData["Title"] = "Orders";
+    
+}
+<h2 class="text-center text-white bg-info px-1 py-1">Orders</h2>
+
+
+
+
+ @if (User.IsInRole(UserRole.AdminRole))
+ {
+     <partial name="_AdminOrders"></partial>
+
+ }
+
+
+  @if (User.IsInRole(UserRole.DefaultRole))
+ {
+    <partial name="_UserOrders"></partial>
+ }
+
+
+
+

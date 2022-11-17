@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+/* ---------------------------------------Custom Style-----------------------------*/
+.products{
+    margin:auto;
+    padding:2vw;
+}
+.product {
+    text-align:center;
+    padding: .7vw;
+    background-color: limegreen;
+    border: 1px solid grey;
+    border-radius:.3vw;
+}
+
+/*-----------------------------------------Cart button---------------------------*/
+.cart{
+    margin:auto;
+}
+.cart table{
+    margin:auto;
+}
+buttons button {
+    padding: 0.7vw;
+    background-color: orange;
+}
+
+.buttons {
+    padding: 1.5vw;
+    display: flex;
+    justify-content: center;
+}
+
